@@ -23,7 +23,6 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#include <error.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -54,7 +53,7 @@ void show_pubkey() {
   return;
 
 secret_error:
-  error(1, 0, "Error reading secret");
+  printf("Error reading secret");
   return;
 }
 
@@ -62,7 +61,7 @@ void new_secret() {
   ecc_int256_t secret;
 
   if (!ecdsa_new_secret(&secret))
-    error(1, 0, "Unable to read random bytes");
+    printf("Unable to read random bytes");
 
   output_key(&secret);
 }

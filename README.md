@@ -1,6 +1,6 @@
 ECDSA Util for OS X
 ==========
-A fork of the ECDSA Utils by tcatm with slight changes to compile on Mac OS X. Does not work at the moment.
+A fork of the ECDSA Utils by tcatm [with slight changes to compile on Mac OS X](http://i.imgur.com/HoGjHW8.png).
 
 Requirements
 ------------
