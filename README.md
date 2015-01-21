@@ -1,5 +1,6 @@
-ECDSA Util
+ECDSA Util for OS X
 ==========
+A fork of the ECDSA Utils by tcatm with slight changes to compile on Mac OS X. Does not work at the moment.
 
 Requirements
 ------------
@@ -80,4 +81,3 @@ Signature Format
 ----------------
 
 concat $ map tohexstring [r, s]
-
